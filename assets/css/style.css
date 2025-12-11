@@ -549,3 +549,8 @@ a {
     font-size: 2.5rem !important;
   }
 }
+@media (max-width >= 1024px) {
+  .header {
+    font-size: small;
+  }
+}
