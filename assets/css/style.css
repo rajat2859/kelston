@@ -8,28 +8,31 @@
 }
 
 .container {
-  max-width: 1540px;
+  max-width: 80vmax;
+  margin-left: auto;
+  margin-right: auto;
 }
-@media (min-width: 1440px) {
-  .container-custom {
-    max-width: 1400px;
+@media (max-width: 1440px) {
+  .container {
+    max-width: 70vmax;
+  }
+  .add-2 {
+    /* width: 60%; */
+  }
+  .btn3 {
+    font-size: medium;
   }
 }
-@media (max-width: 1439.98px) {
-  .container-custom {
-    max-width: 1024px;
-    margin-left: auto;
-    margin-right: auto;
+@media (min-width: 992px) {
+  html {
+    font-size: 12px;
   }
 }
-@media (max-width: 768px) {
-  .container-custom {
-    max-width: none;
-    padding-left: 15px;
-    padding-right: 15px;
+@media (min-width: 1200px) {
+  html {
+    font-size: 14px;
   }
 }
-
 p {
   margin: 0;
   padding: 0;
@@ -129,15 +132,17 @@ a {
   margin-bottom: 0;
 }
 .feau-3 {
-  padding-bottom: 30px;
+  /* padding-bottom: 30px; */
 }
 .feau-4 {
   padding-top: 18px;
 }
 .btn3 {
-  padding: 10px 20px 10px 20px;
   background: white;
   font-size: larger;
+}
+.tab-list {
+  padding: 10px 20px 10px 20px;
 }
 .btn3 {
   flex-grow: 1;
@@ -157,6 +162,7 @@ a {
   z-index: 0;
   width: 354.95px;
   height: 319px;
+  color: #000;
 }
 .card-2 {
   background-image: url(/assets/images/servcies_2.png);
@@ -388,11 +394,11 @@ a {
 .footer-2 {
   display: flex;
   justify-content: space-around;
-  padding-top: 100px;
+  padding-top: 45px;
   padding-bottom: 55px;
 }
 .logo-footer {
-  padding-bottom: 31px;
+  padding-bottom: 24px;
 }
 .footer-3 {
   display: grid;
@@ -541,7 +547,7 @@ a {
 }
 @media (min-width: 769px) and (max-width: 1024px) {
   .banner-text h1 {
-    font-size: 3.5rem !important;
+    font-size: 1.5rem !important;
   }
 }
 @media (min-width: 1440px) {
@@ -553,4 +559,100 @@ a {
   .header {
     font-size: small;
   }
+}
+.list-unstyled {
+  font-size: 14px;
+}
+main {
+  overflow-x: hidden;
+}
+.head-3 {
+  padding-right: 30px;
+}
+
+@media (min-width: 992px) {
+  .head-5 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .hours-text {
+    text-align: left;
+  }
+
+  .phone-text {
+    text-align: right;
+  }
+}
+@media (max-width: 1310px) {
+  .head-4 {
+    width: 100%;
+  }
+  .head-5 {
+    width: 100%;
+  }
+}
+@media (max-width: 992px) {
+  .head-5 {
+    width: 100%;
+  }
+}
+
+@media (max-width: 1344px) {
+  .col-stack-1344 {
+    flex: 0 0 100% !important;
+    max-width: 100% !important;
+  }
+  .add-1 {
+    width: 75%;
+  }
+}
+/* Your tabs – black text by default, black bg on hover/active */
+.nav-tabs {
+  border-bottom: 2px solid #dc3545 !important; /* red line */
+}
+
+.nav-tabs .nav-link {
+  border: none !important;
+  border-bottom: 3px solid transparent !important;
+  border-radius: 0;
+  color: #000 !important; /* ← black text by default */
+  background-color: transparent !important;
+  padding: 1rem 1.5rem;
+  margin-bottom: -2px;
+  transition: all 0.35s ease;
+  font-weight: 500;
+}
+
+.nav-tabs .nav-link:hover,
+.nav-tabs .nav-link.active {
+  background-color: #000 !important; /* ← black background */
+  color: #fff !important; /* ← white text on hover/active */
+  border-bottom-color: #dc3545 !important; /* ← red underline */
+}
+.footer-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  gap: 40px;
+  margin-top: 30px;
+}
+
+/* Responsive */
+@media (max-width: 992px) {
+  .footer-grid {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+@media (max-width: 576px) {
+  .footer-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+.footer-1 {
+  color: white !important;
+}
+.footer-1 a {
+  color: white !important;
 }
