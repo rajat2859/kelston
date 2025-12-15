@@ -15,6 +15,10 @@ body {
   overflow-x: hidden;
 }
 
+.navbar-links {
+  gap: 20px;
+  font-size: 16px;
+}
 p {
   margin: 0;
   padding: 0;
@@ -56,10 +60,14 @@ a {
   }
 }
 
-.list-unstyled {
-  font-size: 9px;
+.footer-styling {
+  font-size: 16px;
+  max-width: 140px;
 }
-
+.footer-list-styling {
+  padding-bottom: 20px;
+  max-width: 200px;
+}
 main {
   overflow-x: hidden;
 }
